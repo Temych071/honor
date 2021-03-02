@@ -1,0 +1,128 @@
+
+.animation-links {
+  outline: transparent;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 0px;
+  padding: 2px;
+  transition: border-color 0.5s, background-color 0.5s, border-radius 1s;
+  cursor: pointer;
+  
+  &:focus {
+    border-color: $orange;
+    border-radius: 6px;
+  }
+  
+  &:hover {
+    background-color: $orange;
+  }
+  
+  &:active {
+    border-color: $light-blue;
+  }
+}
+
+.animation-header {
+  border: 5px solid transparent;
+  outline: transparent;
+  transition: border-color 0.5s, background-color 0.5s;
+  
+  &:focus {
+    border-color:  $blue;
+  }
+
+  &:hover {
+    
+    path {
+      fill:red;
+    }
+
+  }
+
+  &:active {
+    background-color: $blue;
+  }
+}
+
+.animation-btn {
+  border: 5px solid transparent;
+  outline: transparent;
+  transition: background-color 0.5s, box-shadow .3s;
+  
+    &:focus {
+      box-shadow: 0 0 0 7px $orange;
+    }
+
+    &:hover{
+      background-color: $blue;
+      
+      path {
+        fill: white;
+      }
+    }
+
+    &:active {
+      box-shadow: 0 0 0 7px $orange;
+    }
+}
+
+
+.animation-button {
+  border: 3px solid transparent;
+  outline: transparent;
+  transition: background-color 0.5s, box-shadow 0.3s;
+  
+    &:focus {
+      box-shadow: 0 0 0 7px  #748bb1;
+      border-radius: 6px;
+    }
+
+    &:hover{
+      background-color: $blue;
+      
+      path {
+        fill: white;
+      }
+    }
+
+    &:active {
+      box-shadow: 0 0 0 7px  #3c4147;
+    }
+}
+
+.play-button{
+  width: 200px;
+  height: 100%;
+  margin: 0 auto 0;
+
+  &__img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid $sky-blue;
+    box-shadow: 0 0 0 0 rgba(90, 153, 220, 0.7), inset 0 1px 0 #98c4ec;
+    border-radius: 100%;
+    background-color: $sky-blue;
+    cursor: pointer;
+    animation: pulse 1s infinite cubic-bezier(0.6, 0, 0, 1);
+    
+    &:focus{
+      box-shadow:0 0 0 23px rgba(81, 147, 218, 0), inset 0 1px 0 #9ec3e6;
+    }
+
+    &:hover{
+      background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, #6eace4), color-stop(100%, #4f93d4));
+      background-image: -webkit-linear-gradient(#64a0d6, #3f86ca);
+      background-image: linear-gradient(#66a3da, #3f88ce);
+    }
+  }
+}
+  @keyframes pulse{
+    to{
+      box-shadow:0 0 0 23px rgba(81, 147, 218, 0), inset 0 1px 0 #9ec3e6;
+    }
+  }

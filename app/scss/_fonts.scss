@@ -1,0 +1,94 @@
+/* Стили шрифта Rubik */
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-style: normal;
+  src: 
+        url('../fonts/Rubik/Rubik-Regular.woff2') format('woff2'),
+        url('../fonts/Rubik/Rubik-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-style: normal;
+  src: 
+        url('../fonts/Rubik/Rubik-Medium.woff2') format('woff2'),
+        url('../fonts/Rubik/Rubik-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-style: normal;
+  src: 
+        url('../fonts/Rubik/Rubik-Bold.woff2') format('woff2'),
+        url('../fonts/Rubik/Rubik-Bold.woff') format('woff');
+  font-display: swap;
+}
+/* ---------------------------------------------------- */
+/* Стили шрифта Poppins */
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  src: 
+        url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-style: normal;
+  src: 
+        url('../fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-style: normal;
+  src: 
+        url('../fonts/Poppins/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
+  font-display: swap;
+}
+/* ---------------------------------------------------- */
+/* Стили шрифта DMSans */
+@font-face {
+  font-family: 'DMSans';
+  font-weight: 400;
+  font-style: normal;
+  src: 
+        url('../fonts/DMSans/DMSans-Regular.woff2') format('woff2'),
+        url('../fonts/DMSans/DMSans-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  font-weight: 500;
+  font-style: normal;
+  src: 
+        url('../fonts/DMSans/DMSans-Medium.woff2') format('woff2'),
+        url('../fonts/DMSans/DMSans-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  font-weight: 700;
+  font-style: normal;
+  src: 
+        url('../fonts/DMSans/DMSans-Bold.woff2') format('woff2'),
+        url('../fonts/DMSans/DMSans-Bold.woff') format('woff');
+  font-display: swap;
+}
+/* ---------------------------------------------------- */
