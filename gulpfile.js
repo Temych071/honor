@@ -27,7 +27,11 @@ function nunjucks() {
 }
 
 function styles() {
-  return src('app/scss/*.scss')
+  return src(
+    [
+      'app/scss/*.scss',
+      'app/fonts/**/*.scss',
+    ])
     .pipe(scss({outputStyle: 'compressed'}))
     .pipe(rename({
       suffix : '.min'

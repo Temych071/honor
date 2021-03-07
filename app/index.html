@@ -1,30 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Honor layout</title>
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <img src="images/logo.jpg" alt="Honor logo">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honor layout</title>
 
-        <nav class="header-menu">
-          <ul class="header-menu__items">
-            <li class="header-menu__item"><a href="#">Home</a></li>
-            <li class="header-menu__item"><a href="#">Donations</a></li>
-            <li class="header-menu__item"><a href="#">Gallery</a></li>
-            <li class="header-menu__item"><a href="#"></a></li>
-            <li class="header-menu__item"><a href="#"></a></li>
-            <li class="header-menu__item"><a href="#"></a></li>
-            <li class="header-menu__item"><a href="#"></a></li>
-          </ul>
-        </nav>
+    <link rel="stylesheet" href="css/style.min.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <img src="images/logo.png" alt="Honor logo">
+
+          <nav class="header-menu">
+            <ul class="header-menu__items">
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Home</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Donations</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Gallery</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Sermons</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Events</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Pages</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Shop</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__personals">
+            <a class="header__cart">
+              <span class="header__count">
+                0
+              </span>
+            </a>
+            <a class="header__search"></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
-</body>
+    </header>
+
+    <main class="main">
+
+      <div class="slider-main">
+        <img class="slider-main__image" src="images/header-bg1.jpg" alt="slide-1">
+        <img class="slider-main__image" src="images/header-bg2.jpg" alt="slide-2">
+        <img class="slider-main__image" src="images/header-bg3.jpg" alt="slide-3">
+      </div>
+
+      <div class="upcoming-event">
+        <div class="container">
+          <div class="upcoming-event__content">
+            <div class="upcoming-event__title">
+              <i class="fa fa-calendar-o upcoming-event__title-icon" aria-hidden="true"></i>
+              <span class="upcoming-event__event">Upcoming Event</span>
+              <span class="upcoming-event__date">&mdash; Sep 31,2021</span>
+              <span class="upcoming-event__name">Help children survive the horrors of Disaster</span>
+            </div>
+
+            <div class="upcoming-event__timer">
+              <div class="upcoming-event__days">
+                <div class="upcoming-event__timer-title">Days</div>
+                <div class="upcoming-event__timer-digit">14</div>
+              </div>
+
+              <div class="upcoming-event__days">
+                <div class="upcoming-event__timer-title">Hours</div>
+                <div class="upcoming-event__timer-digit">24</div>
+              </div>
+
+              <div class="upcoming-event__days">
+                <div class="upcoming-event__timer-title">Minutes</div>
+                <div class="upcoming-event__timer-digit">36</div>
+              </div>
+
+              <div class="upcoming-event__days">
+                <div class="upcoming-event__timer-title">Seconds</div>
+                <div class="upcoming-event__timer-digit">18</div>
+              </div>
+            </div>
+
+            <div class="upcoming-event__links">
+              <button class="upcomming-event__read-more read-more">Read More</button>
+              <span > or 
+                <a class="upcoming-event__all-events" href="#" >View All Events ></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="recent-news">
+        <div class="container">
+
+          <div class="section-title">
+            <i class="fa fa-coffee section-title__icon" aria-hidden="true"></i>
+
+            <h2 class="section-title__title">
+              Recent News
+              <span class="section-title__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span>
+            </h2>
+          </div>
+
+          <div class="recent-news__items">
+
+            <div class="recent-news__item news-item">
+              <img class="recent-news__image" src="images/recent-news-1.jpg" alt="news">
+
+              <div class="recent-news__title">
+                <div class="recent-news__date">
+                  <span class="recent-news__day">30</span>
+                  <span class="recent-news__month">Sep 2021</span>
+                </div>
+
+                <div class="recent-news__name">Forgiveness builds relashions and happiness</div>
+              </div>
+
+              <div class="recent-news__description">
+                <span class="recent-news__number">12</span>
+                <p class="recent-news__text">
+                  And it's a lesson we need to remember today - as members of another Joshua generation. I get it.
+                </p>
+
+              </div>
+
+              <div class="recent-news__hidden">
+                <div class="recent-news__circle">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="recent-news__item news-item">
+              <img class="recent-news__image" src="images/recent-news-2.jpg" alt="news">
+
+              <div class="recent-news__title">
+                <div class="recent-news__date">
+                  <span class="recent-news__day">30</span>
+                  <span class="recent-news__month">Sep 2021</span>
+                </div>
+
+                <div class="recent-news__name">Forgiveness builds relashions and happiness</div>
+              </div>
+
+              <div class="recent-news__description">
+                <span class="recent-news__number">12</span>
+                <p class="recent-news__text">
+                  And it's a lesson we need to remember today - as members of another Joshua generation. I get it.
+                </p>
+
+              </div>
+
+              <div class="recent-news__hidden">
+                <div class="recent-news__circle">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="recent-news__item news-item">
+              <img class="recent-news__image" src="images/recent-news-3.jpg" alt="news">
+
+              <div class="recent-news__title">
+                <div class="recent-news__date">
+                  <span class="recent-news__day">30</span>
+                  <span class="recent-news__month">Sep 2021</span>
+                </div>
+
+                <div class="recent-news__name">Forgiveness builds relashions and happiness</div>
+              </div>
+
+              <div class="recent-news__description">
+                <span class="recent-news__number">12</span>
+                <p class="recent-news__text">
+                  And it's a lesson we need to remember today - as members of another Joshua generation. I get it.
+                </p>
+
+              </div>
+
+              <div class="recent-news__hidden">
+                <div class="recent-news__circle">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="recent-news__share">
+            <img src="images/fb-like.png" alt="" class="recent-news__facebook">
+            <img src="images/fb-share.png" alt="" class="recent-news__another-share">
+            <span class="recent-news__share-text">23 122 people like this. Be the first among your friends.</span>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="upcoming">
+        <i class="fa fa-coffee" aria-hidden="true"></i>
+
+        <h2 class="title">
+          Upcoming Events
+          <span class="title__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span>
+        </h2>
+
+        <div class="upcoming__items">
+          <div class="upcoming__item">
+            <div class="upcoming__date">
+              <span class="upcoming__day">31</span>
+              <span class="upcoming__month">september</span>
+            </div>
+
+            <h3 class="upcoming__item-title">
+              Love the Lord Your God with All Your Heart
+            </h3>
+
+            <span class="upcoming__time">8:00 am — 9:00 am</span>
+            <span class="upcoming__place">@California Church</span>
+
+            <button class="read-more">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>Read More
+            </button>
+          </div>
+        </div>
+
+        <a class="upcoming__view" href="#">View All Events</a>
+      </section>
+
+      <section class="volunteers">
+        <div class="container">
+
+          <i class="fa fa-coffee" aria-hidden="true"></i>
+
+          <h2 class="title">
+          Our Volunteers
+          <span class="title__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span>
+          </h2>
+
+          <div class="volunteers__items">
+
+            <div class="volunteers__item">
+              <div class="volunteers__face">
+                <img class="volunteers__img" src="" alt="Michel Dorn">
+              </div>
+
+              <span class="volunteers__name">Michel Dorn</span>
+              <span class="volunteers__status">Church Leader</span>
+
+              <div class="contact-links">
+                <div class="contact-links__twitter"></div>
+                <div class="contact-links__facebook"></div>
+                <div class="contact-links__google"></div>
+                <div class="contact-links__instagram"></div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="what-news">
+        <div class="container">
+          <div class="what-news__slider">
+
+            <div class="what-news__item">
+              <img src="" alt="good news" class="what-news__image">
+              <div class="what-news__content">
+
+                <h4 class="what-news__title">
+                  Whats News?
+                </h4>
+
+                <p class="what-news__text">It was closing, kept showing up every day and working as hard as ever, because they knew there were people who counted on the brakes that they made. </p>
+                <p class="what-news__text">Tell that to the proud auto workers at a Michigan plant who, after they found out it was closing.</p>
+
+                <button class="read-more"></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__content">
+
+            <h4 class="about__title">About Us</h4>
+
+            <p class="about__text">
+              Аrshmallow jelly-o candy canes biscuit. Liquorice gummi bears tart ice cream marshmallow applicake. Gummi bears pastry I love chocolate bar. Cheese cake bonbon bear claw marshmallow. Gummi bears pastry I love chocolate bar.
+            </p>
+
+            <p class="about__text">
+              Cheese cake bonbon bear claw marshmallow. Gummi bears pastry I love chocolate bar. 
+            </p>
+
+            <div class="blockquote">
+              <div class="blockquote__face">
+                <img src="" alt="" class="blockquote__img">
+              </div>
+
+              <blockquote class="blockquote__cite">
+                Blessed are the peacemakers, for they shall be called sons of God.
+                <cite class="blockquote__author">— Richard Arkenstone</cite>
+              </blockquote>
+            </div>
+
+          </div>
+
+          <div class="about__join">
+            <span class="about__join-title">Wanna be a Volunteer?</span>
+            <button class="read-more">
+              Join Us
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="donations">
+        <div class="container">
+          <i class="fa fa-coffee" aria-hidden="true"></i>
+
+          <h2 class="title">
+          Donations
+          <span class="title__description">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span>
+          </h2>
+
+          <div class="donations__items">
+
+            <div class="donations__item">
+              <div class="donations__top">
+                <img src="" alt="" class="donations__image">
+
+                <h4 class="donations__title">
+                  Love the Lord Your God with All Your Heart
+                </h4>
+
+                <p class="donations__text">
+                  The New Hope Ministry is a dedicated outreach to men, women and families in homeless shelters by meeting their. 
+                </p>
+              </div>
+
+              <div class="donations__bottom">
+
+                <div class="scale">
+                  <div class="scale__outer">
+                    <div class="scale__inner"></div>
+                  </div>
+                </div>
+
+                <div class="donations__numbers"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

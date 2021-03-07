@@ -1,0 +1,16 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dbdedf;
+        fill-opacity: 0;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1373.5,15c5.25,0,9.5,3.753,9.5,9h-19C1364,18.751,1368.25,15,1373.5,15Z" transform="translate(-1355 -14)"/>
+  <path class="cls-1" d="M1359,22h29l3,28h-35Z" transform="translate(-1355 -14)"/>
+</svg>

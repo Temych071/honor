@@ -11,51 +11,29 @@ $blue: #78a9f8;
 $turquoise: #a3bbc8;
 
 /* Переменные для шрифтов */
-%rubikmedium-500 {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-}
-
-%rubikregular-400 {
-  font-family: 'Rubik', sans-serif;
+%roboto-400 {
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
-%rubikbold-700 {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
-}
-
-
-%dmsansregular-400 {
-  font-family: 'DMSans', sans-serif;
-  font-weight: 400;
-}
-
-%dmsansmedium-500 {
-  font-family: 'DMSans', sans-serif;
+%roboto-500 {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
-%dmsansbold-700 {
-  font-family: 'DMSans', sans-serif;
+%roboto-700 {
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
+%roboto-900 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
 
-%poppinsregular-400 {
-  font-family: 'Poppins', sans-serif;
+%opensans-400 {
+  font-family: 'OpenSans', sans-serif;
   font-weight: 400;
-}
-
-%poppinsmedium-500 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-}
-
-%poppinsbold-700 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
 }
 
 @function max($numbers...) {
