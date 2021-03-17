@@ -9,6 +9,8 @@ const rename          = require('gulp-rename');
 const nunjucksRender  = require('gulp-nunjucks-render');
 const del             = require('del');
 const browserSync     = require('browser-sync').create();
+const moment          = require('moment');
+const momentTimezone  = require('moment-timezone');
 
 function browsersync() {
   browserSync.init({
@@ -50,6 +52,9 @@ function scripts() {
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/moment/moment.js',
+    'node_modules/moment-timezone/moment-timezone.js',
+    'app/js/timer.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
