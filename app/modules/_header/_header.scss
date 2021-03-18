@@ -1,0 +1,65 @@
+.header {
+  height: 70px;
+  background-color: #b41414;
+  
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+
+  &__personals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    @extend %roboto-400;
+    font-size: 12px; 
+    color: white;
+    background-image: url(../images/cart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__search {
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/icons/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.header-menu {
+  margin-right: 20px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  &__item + li{
+    margin-left: 28px;
+  }
+
+  &__link{
+    @extend %roboto-400;
+    font-size: 12px; 
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}

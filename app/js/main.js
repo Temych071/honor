@@ -87,8 +87,9 @@ function endEvent($el, newText, hideEl){
     $el.text(newText);
     hideEl.hide();
 }
-timer1('2021-04-09 09:00');
-timer2('2021-04-09 09:00');
-timer3('2021-04-09 09:00');
+
+  let timer4 = timer1('2021-04-09 09:00');
+  let timer2 = timer1('2021-04-22 09:00');
+  let timer3 = timer1('2021-04-15 09:00');
 
 });

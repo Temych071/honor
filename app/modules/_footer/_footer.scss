@@ -1,0 +1,115 @@
+.footer {
+  padding: 55px 0;
+  background-color: #333537;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__item {
+    width: 210px;
+  }
+
+  &__title {
+    @extend %roboto-400;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 35px;
+  }
+  
+  &__post {
+    @extend %opensans-400;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  &__post-text {
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+
+  &__post-date {
+    color: rgb(137, 137, 137);
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+
+  }
+
+  &__icon {
+    font-size: 11px;
+  }
+
+  &__link {
+    @extend %opensans-400;
+    font-style: normal;
+    font-size: 13px;
+    color: rgb(137, 137, 137);
+    margin-bottom: 10px;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__text {
+    @extend %opensans-400;
+    font-style: normal;
+    font-size: 13px;
+    color: rgb(137, 137, 137);
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+
+  &__form-input {
+    width: 210px;
+    height: 40px;
+    background-color: black;
+    color: rgb(137, 137, 137);
+    margin-bottom: 20px;
+    border: none;
+    padding: 0 15px;
+  }
+
+  
+  &__submit {
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #9a0c0c;
+    color: white;
+    border: none;
+  }
+}
+
+.address {
+  @extend %opensans-400;
+  font-style: normal;
+  font-size: 13px;
+  color: rgb(137, 137, 137);
+
+  &__street,
+  &__link {
+    @extend %opensans-400;
+    font-style: normal;
+    font-size: 13px;
+    color: rgb(137, 137, 137);
+  }
+
+  &__street {
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  &__phone {
+    margin-bottom: 10px;
+  }
+
+  &__phone:last-child &__link {
+    color: white;
+  }
+}

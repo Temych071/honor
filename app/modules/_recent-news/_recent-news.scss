@@ -1,0 +1,160 @@
+.recent-news {
+  padding: 60px 0;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 25px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      border-top: 1px solid #939393;
+      border-bottom: 1px solid #939393;
+    }
+  }
+
+  &__item {
+    width: 290px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__item:hover &__hidden {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+  
+  &__item:hover &__circle {
+    display: flex;
+  }
+
+  &__hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    height: 199px;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__circle {
+    width: 52px;
+    height: 52px;
+    background-color: #af2a2a;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__plus {
+    font-size: 30px;
+    color: white;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__date {
+    width: 60px;
+    text-align: center;
+    color: #939393;
+    margin-bottom: 25px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      border-top: 1px solid #939393;
+      border-bottom: 1px solid #939393;
+    }
+  }
+
+  &__day {
+    display: block;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  &__month {
+    @extend %roboto-400;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    width: 230px;
+    padding-left: 20px;
+    @extend %opensans-400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #c71919;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__number {
+    display: block;
+    width: 60px;
+    text-align: center;
+    position: relative;
+    padding-top: 12px;
+    color: white;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/dialog.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      top: 4px;
+      left: 14px;
+      width: 32px;
+      height: 35px;
+      z-index: -1;
+    }
+  }
+
+  &__text {
+    width: 230px;
+    padding-left: 20px;
+    @extend %opensans-400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #939393;
+  }
+
+  &__share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__share-text {
+    margin-left: 10px;
+    @extend %opensans-400;
+    font-size: 11px;
+  }
+}

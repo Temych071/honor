@@ -1,14 +1,4 @@
-/* Переменные для основных цветов */
-$light-blue: #436372;
-$dark-blue: #243f4d;
-$dark-brown: #414141;
-$light-brown: #585858;
-$sky-blue: #a3bbc8;
-$soft-orange: #fef7f0;
-$orange:#fcd7b6;
-$gray: #7b7b7b;
-$blue: #78a9f8;
-$turquoise: #a3bbc8;
+
 
 /* Переменные для шрифтов */
 %roboto-400 {
@@ -34,13 +24,5 @@ $turquoise: #a3bbc8;
 %opensans-400 {
   font-family: 'OpenSans', sans-serif;
   font-weight: 400;
-}
-
-@function max($numbers...) {
-  @return m#{a}x(#{$numbers});
-}
-
-@function min($numbers...) {
-  @return m#{i}n(#{$numbers});
 }
 

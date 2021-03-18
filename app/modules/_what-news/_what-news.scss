@@ -1,0 +1,75 @@
+.what-news {
+  padding: 60px 0;
+  background-color: #c1c1c1;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 400px;
+  }
+
+  &__content {
+    width: 529px;
+    padding: 40px 50px 50px;
+    background-color: white;
+  }
+
+  &__title {
+    font-size: 30px;
+    color: #444249;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    @extend %opensans-400;
+    font-size: 14px;
+    color: #858585;
+    margin-bottom: 35px;
+  }
+
+  &__button {
+    width: 130px;
+    height: 50px;
+    margin: 0;
+    @extend %roboto-500;
+    font-size: 16px;
+    background-color: #9a0c0c;
+    border-radius: 6px;
+  }
+
+  &__button span{
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 50px;
+  left: 160px;
+  z-index: 6;
+
+  li {
+    margin-left: 10px;
+  }
+
+  button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+  }
+    .slick-active button {
+      background-color: #9a0c0c;
+    } 
+}

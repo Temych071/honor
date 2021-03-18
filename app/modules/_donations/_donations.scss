@@ -1,0 +1,97 @@
+.donations {
+  padding: 60px 0;
+  background-color: #c1c1c1;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 290px;
+  }
+
+  &__top {
+    background-color: white;
+    padding: 20px 10px;
+  }
+
+  &__img {
+    padding: 10px;
+    width: 230px;
+    border: 2px solid #a71818;;
+    border-radius: 50px;
+    margin: 0 auto 15px;
+  }
+
+  &__image {
+    border-radius: 40px;
+  }
+
+  &__title {
+    @extend %roboto-700;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    text-transform: unset;
+  }
+
+  &__text {
+    @extend %opensans-400;
+    font-size: 14px;
+    color: #858585;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  &__bottom {
+    background-color: #a71818;
+    padding: 20px 10px;
+  }
+
+  &__numbers {
+     display: flex;
+     justify-content: space-around;
+  }
+
+  &__numbers-item {
+    width: 60px;
+    text-align: center;
+  }
+
+  &__numbers-icon {
+    color: #ffde00;
+    margin-bottom: 5px;
+  }
+
+  &__count {
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+  }
+
+  &__raised {
+    display: block;
+    color: #ffde00;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    @extend %roboto-500;
+    font-size: 16px;
+  }
+
+  &__button span{
+    margin-top: 2px;
+    margin-left: 5px;
+    text-transform: uppercase;
+  }
+
+}

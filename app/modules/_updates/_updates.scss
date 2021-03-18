@@ -1,0 +1,92 @@
+.updates {
+  position: relative;
+  background-color: #252a30;
+  overflow: hidden;
+
+  &__body {
+    width: 290px;
+    padding: 60px 0
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 266px;
+  }
+
+  &__title {
+    @extend %roboto-500;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    padding-right: 30px;
+  }
+
+  &__slider {
+    width: 1000px;
+    height: 270px;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 500px;
+  }
+
+  &__slider-item {
+    margin: 0;
+    width: 100%;
+  }
+  
+  &__hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 320px;
+    height: 266px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  &__chain {
+    width: 52px;
+    height: 52px;
+    background-color: #af2a2a;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  &__slider-item:hover &__hidden {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+  
+  &__slider-item:hover &__chain {
+    display: flex;
+  }
+
+  &__button {
+    width: 180px;
+    height: 55px;
+    @extend %roboto-500;
+    font-size: 16px;
+    color: white;
+    background-color: #c71919;
+    border: none;
+  }
+
+  &__button span{
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+
+  &__icon {
+    font-size: 30px;
+    color: white;
+  }
+
+}

@@ -1,0 +1,41 @@
+.blockquote {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding-right: 50px;
+
+  &__face {
+    width: 160px;
+    height: 100px;
+    margin-left: 30px;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: -5px;
+      left: -29px;
+      content: url(../images/icons/lavro.svg);
+    }
+  }
+
+  &__cite {
+    display: block;
+    font-family: Georgia;
+    font-style: italic;
+    padding-left: 70px;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #fb4141;
+    
+  }
+
+  &__author {
+    display: block;
+    @extend %opensans-400;
+    font-size: 14px;
+    color: #858585;
+    margin-top: 10px;
+  }
+
+}

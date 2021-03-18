@@ -1,0 +1,130 @@
+.volunteers {
+  padding: 60px 0;
+
+  &__items {
+    padding-bottom: 100px;
+  }
+
+  &__item {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    padding: 0 33px;
+  }
+
+  &__face {
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    @extend %opensans-400;
+    font-size: 18px;
+    color: #c71919;
+    display: block;
+  }
+
+  &__status {
+    @extend %opensans-400;
+    font-size: 14px;
+    color: #828282;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__item:hover &__hidden {
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 3px solid #af2a2a;
+  }
+  
+  &__item:hover &__circle {
+    display: flex;
+  }
+
+  &__hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    background-color: rgba(0, 0, 0, 0);
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 33px;
+    right: 0;
+  }
+
+  &__circle {
+    width: 52px;
+    height: 52px;
+    background-color: #af2a2a;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__plus {
+    font-size: 30px;
+    color: white;
+  }
+
+  &__slick-next,
+  &__slick-prev {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+    border: 2px solid #dadada;
+    border-radius: 50%;
+    z-index: 4;
+    transform: translateX(100%);
+    background-size: 30%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 10px center ;
+
+    &:before {
+      width: 420px;
+      content: '';
+      position: absolute;
+      top: 50%;
+      border-top: 2px solid #dadada;
+      overflow: hidden;
+    }
+
+  }
+
+  &__slick-prev {
+    background-image: url(../images/icons/volunteer-left.svg);
+    left: 50%;
+    background-position: 15px center;
+    transform: translateX(-120%);
+
+    &::before {
+      right: 47px;
+    }
+
+    &:hover {
+      background-image: url(../images/icons/volunteer-left-hover.svg);
+    
+    }
+  }
+
+  &__slick-next {
+    background-image: url(../images/icons/volunteer-right.svg);
+    right: 50%;
+    background-position: 18px center;
+    transform: translateX(120%);
+    
+    &::before {
+      left: 47px;
+    }
+
+    &:hover {
+      background-image: url(../images/icons/volunteer-right-hover.svg);
+    
+    }
+  }
+}
