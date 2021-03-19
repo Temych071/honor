@@ -7,10 +7,11 @@
 /*
 @import 'components/animations.scss';
 
-@import 'components/menu';
+
 @import 'components/slider-main';
 @import 'components/footer';
 */
+@import 'components/section-title';
 
 @import '../modules/_header/header';
 
@@ -22,9 +23,9 @@
 @import '../modules/_upcoming/upcoming';
 
 @import '../modules/_volunteers/volunteers';
-
+ 
 @import '../modules/_what-news/what-news';
-
+  
 @import '../modules/_about/about';
 @import '../modules/_about/blockquote';
 
@@ -51,56 +52,7 @@
   border: 2px solid white;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 55px;
 
-  &__icon {
-    margin-bottom: 12px;
-    font-size: 28px;
-    color: black;
-  }
-
-  &__title {
-    font-size: 28px;
-    margin-bottom: 22px;
-    color: black;
-    position: relative;
-    @extend %roboto-400;
-
-    &::after,
-    &::before {
-      content: '';
-      position: absolute;
-      width: 39%;
-      height: 55px;
-      background-repeat: no-repeat;
-      top: -7px;
-      background-size: cover;
-      overflow: hidden;
-    }
-
-    &::before {
-      left: 0px;
-      background-position: right;
-      background-image: url(../images/flover-left-darker.png);
-    }
-
-    &::after {
-      right: 0px;
-      background-position: left;
-      background-image: url(../images/flover-right-darker.png);
-    }
-  }
-
-  &__description {
-    display: block;
-    @extend %opensans-400;
-    font-size: 14px;
-    color: black;
-    margin-top: 20px;
-  }
-}
 
 .contact-links {
   display: flex;

@@ -1,6 +1,10 @@
 
 $(function(){
 
+  $('.header-menu__menu-btn, .menu a').on('click', function(){
+    $('.header-menu__items').toggleClass('header-menu__items--active');
+  });
+
   $('.slider-main').slick({
     arrows: true,
     prevArrow: '<button type="button" class="slick-prev slider-main__slick-prev"><img class="slider-main__prev-arrow" src="images/arrow-left.png" alt="arrow-left"></button>',

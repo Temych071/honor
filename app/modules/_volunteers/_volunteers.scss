@@ -5,6 +5,14 @@
     padding-bottom: 100px;
   }
 
+  &__title {
+    &::after,
+    &::before {
+      content: '';
+      width: 38%;
+    }
+  }
+
   &__item {
     width: 250px;
     text-align: center;

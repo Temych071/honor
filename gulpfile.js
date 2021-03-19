@@ -17,12 +17,12 @@ function browsersync() {
     server:{
       baseDir: 'app/'
     },
-    notofy:false
+    notify:false
   })
 }
 
 function nunjucks() {
-  return src('app/*.njk')
+  return src('app/**/*.njk')
     .pipe(nunjucksRender())
     .pipe(dest('app'))
     .pipe(browserSync.stream())
@@ -31,6 +31,7 @@ function nunjucks() {
 function styles() {
   return src(
     [
+      'app/modules/**/*.scss',
       'app/scss/*.scss',
       'app/fonts/**/*.scss',
     ])
@@ -94,7 +95,8 @@ function cleanDist() {
 
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
-  watch(['app/*.njk'], nunjucks);
+  watch(['app/modules/**/*.scss'], styles);
+  watch(['app/**/*.njk'], nunjucks);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }
