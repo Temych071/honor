@@ -2,8 +2,8 @@
 .slider-main {
 
   &__image {
-    height: 100%;
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
   }
 
   &__slick-next,
@@ -12,7 +12,7 @@
     height: 50px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-200%);
     background: none;
     border: none;
     z-index: 4;
@@ -24,5 +24,25 @@
 
   &__slick-next {
     right: 50px;
+  }
+}
+
+
+@media (max-width: 960px) {
+  .slider-main {
+
+    &__slick-next,
+    &__slick-prev {
+      transform: translateY(-300%);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .slider-main {
+    &__slick-next,
+    &__slick-prev {
+      display: none;
+    }
   }
 }

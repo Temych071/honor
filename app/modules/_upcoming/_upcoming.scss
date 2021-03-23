@@ -28,7 +28,7 @@
   }
 
   &__item {
-    width: 212px;
+    max-width: 212px;
     padding: 20px 25px 37px;
     color: white;
     text-align: center;
@@ -137,5 +137,46 @@
       right: 0;
     }
 
+  }
+}
+
+@media (max-width: 960px) {
+ .upcoming {
+    &__items {
+      padding-top: 0px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .upcoming {
+
+    &__items {
+      max-width: 550px;
+      width: 100%;
+    }
+
+    &__item-title {
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    &__date {
+      height: 70px;
+      padding-top: 20px;
+      text-align: center;
+      margin-bottom: 25px;
+      background-size: 40%;
+    }
+  
+    &__day {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &__item-title {
+      margin-bottom: 35px;
+    }
   }
 }

@@ -20,7 +20,7 @@
   }
 
   &__item {
-    width: 290px;
+    max-width: 290px;
     padding-bottom: 60px;
     position: relative;
   }
@@ -101,7 +101,7 @@
   }
 
   &__name {
-    width: 230px;
+    max-width: 230px;
     padding-left: 20px;
     @extend %opensans-400;
     font-size: 16px;
@@ -156,5 +156,35 @@
     margin-left: 10px;
     @extend %opensans-400;
     font-size: 11px;
+  }
+}
+
+@media (max-width: 960px) {
+  .recent-news {
+    padding: 60px 0;
+  
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .recent-news {
+    padding: 60px 0;
+  
+    &__items {
+      display: block;
+    }
+
+    &__item {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

@@ -47,6 +47,7 @@
   margin-right: 20px;
 
   &__menu-btn {
+    position: absolute;
     display: none;
     border: none;
     background-color: transparent;
@@ -91,8 +92,10 @@
     width: 100%;
 
     &__menu-btn {
+      width: 60px;
       display: block;
-      transform: translate(470%, -25%);
+      top: -7px;
+      right: 0;
     }
 
     &__items {
@@ -105,7 +108,7 @@
       transform: translateY(-500px);
 
       &--active {
-        transform: translateY(0);
+        transform: translateY(42px);
       }
     }
 
@@ -116,6 +119,17 @@
     &__link{
       display: block;
       padding: 15px 0;
+    }
+  }
+
+  .header {
+    &__personals {
+      margin-right: 50px;
+    }
+    
+    &__cart {
+      background-size: 80%;
+      margin-right: 15px;
     }
   }
 }

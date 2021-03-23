@@ -11,9 +11,29 @@ $(function(){
     nextArrow: '<button type="button" class="slick-next slider-main__slick-next"><img class="slider-main__nexr-arrow" src="images/arrow-right.png" alt="arrow-right"></button>',
   });
 
+  let slides = 3;
+  if(window.innerWidth > 960) {
+      slides = 3;
+      window.reload;
+    }
+    else if (window.innerWidth < 960 && window.innerWidth > 675){
+      slides = 2;
+      console.log("|window.innerWidth");
+    }
+    else if (window.innerWidth < 676){
+      console.log(window.innerWidth);
+      slides = 1;
+    }  
+
+  window.onresize = function( event ) {
+    //document.location.reload();
+  };
+  
+console.log(window.innerWidth);
+
   $('.volunteers__items').slick({
     arrows: true,
-    slidesToShow: 3,
+    slidesToShow: slides,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev volunteers__slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next volunteers__slick-next"></button>',

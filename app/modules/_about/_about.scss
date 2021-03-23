@@ -27,7 +27,7 @@
   }
 
   &__join {
-    width: 290px;
+    max-width: 290px;
     background-color: #c71919;
     color: white;
     padding: 60px 10px 50px;
@@ -63,4 +63,30 @@
     text-transform: uppercase;
   }
 
+}
+
+@media (max-width: 960px) {
+  .about {
+    
+    &__content {
+      display: block;
+    }
+
+    &__join {
+      max-width: 100%;
+      padding: 30px 10px 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__heart {
+      display: block;
+      margin-bottom: 0;
+    }
+
+    &__join-title {
+      margin-bottom: 0;
+    }
+  }
 }

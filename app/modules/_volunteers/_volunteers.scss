@@ -1,5 +1,12 @@
 .volunteers {
   padding: 60px 0;
+  position: relative;
+
+  &__content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
 
   &__items {
     padding-bottom: 100px;
@@ -21,30 +28,37 @@
   }
 
   &__face {
-    margin-bottom: 20px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 20px;
   }
 
   &__name {
+    width: 100%;
     @extend %opensans-400;
     font-size: 18px;
     color: #c71919;
     display: block;
+    text-align: center;
   }
 
   &__status {
+    width: 100%;
     @extend %opensans-400;
     font-size: 14px;
     color: #828282;
     display: block;
     margin-bottom: 20px;
+    text-align: center;
   }
 
-  &__item:hover &__hidden {
+  &__face:hover &__hidden {
     background-color: rgba(0, 0, 0, 0.55);
     border: 3px solid #af2a2a;
   }
   
-  &__item:hover &__circle {
+  &__face:hover &__circle {
     display: flex;
   }
 
@@ -58,7 +72,7 @@
     width: 250px;
     height: 250px;
     top: 0;
-    left: 33px;
+    left: 0px;
     right: 0;
   }
 
