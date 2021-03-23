@@ -49,3 +49,21 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 550px) {
+  .blockquote {
+    display: block;
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    &__face {
+      margin: 0 auto 20px;
+    }
+
+    &__cite {
+      padding: 0 30px;
+      margin: 0 auto 20px;
+    }
+  }
+}

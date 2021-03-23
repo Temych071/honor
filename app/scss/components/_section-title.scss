@@ -48,3 +48,16 @@
     margin-top: 20px;
   }
 }
+
+@media (max-width: 876px) {
+  .section-title {
+    
+    &__title {
+      
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -126,8 +126,9 @@
     }
   
     &__links {
-      display: block;
-      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   
     &__links span{
@@ -136,8 +137,7 @@
     }
   
     &__read-more {
-      margin: 0 auto;
-      color: white;
+      margin-bottom: 15px;
     }
   }
 }

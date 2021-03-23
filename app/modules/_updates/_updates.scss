@@ -2,10 +2,21 @@
   position: relative;
   background-color: #252a30;
   overflow: hidden;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
 
   &__body {
-    width: 290px;
-    padding: 60px 0
+    max-width: 290px;
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  &__slider-body {
+    width: 150px;
+    position: relative;
   }
 
   &__content {
@@ -28,7 +39,7 @@
     z-index: 3;
     position: absolute;
     top: 0;
-    left: 500px;
+    left: 0px;
   }
 
   &__slider-item {
@@ -89,4 +100,17 @@
     color: white;
   }
 
+}
+
+@media (max-width: 550px) {
+    .updates {
+
+      &__wrapper {
+      display: block;
+      }
+
+      &__slider-body {
+        height: 250px;
+      }
+    }
 }

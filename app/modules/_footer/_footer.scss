@@ -113,3 +113,34 @@
     color: white;
   }
 }
+
+@media (max-width: 960px) {
+  .footer {
+    padding: 55px 0;
+    background-color: #333537;
+
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    padding: 55px 0;
+    background-color: #333537;
+
+    &__item {
+      margin-right: 0px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+  }
+}

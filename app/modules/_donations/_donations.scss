@@ -95,3 +95,20 @@
   }
 
 }
+
+@media (max-width: 960px) {
+  .donations {
+    padding: 30px 0;
+    background-color: #c1c1c1;
+  
+    &__items {
+      display: block;
+      
+    }
+  
+    &__item {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+}

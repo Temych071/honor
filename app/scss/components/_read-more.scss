@@ -1,0 +1,36 @@
+
+.read-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 13px;
+    background-color: #b9babb;
+    font-size: 17px;
+    color: white;
+
+    &:hover {
+      background-color: #9a0c0c;
+    }
+  }
+  
+}

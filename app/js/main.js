@@ -26,7 +26,7 @@ $(function(){
     }  
 
   window.onresize = function( event ) {
-    //document.location.reload();
+    document.location.reload();
   };
   
 console.log(window.innerWidth);
