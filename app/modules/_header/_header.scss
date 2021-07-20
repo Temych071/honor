@@ -1,18 +1,25 @@
 .header {
+  position: relative;
+  padding-top: 30px;
   height: 70px;
-  background-color: #b41414;
+  background-color: transparent;
+  color: wheat;
+  z-index: 11;
   
   &__top {
+    padding-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 70px;
   }
 
-  &__personals {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &__title {
+    font-size: 55px;
+    letter-spacing: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   &__cart {
@@ -66,7 +73,7 @@
 
   &__link{
     @extend %roboto-400;
-    font-size: 12px; 
+    font-size: 14px; 
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -90,6 +97,7 @@
     left: 0;
     display: block;
     width: 100%;
+    z-index: 6;
 
     &__menu-btn {
       width: 60px;
